@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/juridic/static/css/main.2f083145.css",
+    "main.js": "/juridic/static/js/main.c832e939.js",
+    "static/js/787.4b4fc509.chunk.js": "/juridic/static/js/787.4b4fc509.chunk.js",
+    "index.html": "/juridic/index.html",
+    "main.2f083145.css.map": "/juridic/static/css/main.2f083145.css.map",
+    "main.c832e939.js.map": "/juridic/static/js/main.c832e939.js.map",
+    "787.4b4fc509.chunk.js.map": "/juridic/static/js/787.4b4fc509.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f083145.css",
+    "static/js/main.c832e939.js"
+  ]
+}

@@ -1,46 +1,67 @@
-.questionBlock {
-  max-width: 1000px;
-
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.questionBlock:hover {
-  cursor: pointer;
-  background-color: #f5f5f5;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.card {
+  max-width: 800px;
+  height: 280px;
+  margin: 20px auto;
+  background-color: #fff;
   border-radius: 5px;
-  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 25px 30px;
 }
 
-.answers {
-  display: grid;
-  grid-template-columns: 1fr auto; /* Adjust the column sizes as needed */
-  grid-column-gap: 400px; /* Adjust the spacing between columns */
+.card-question {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-answer {
+  display: flex;
   align-items: center;
-  margin-top: 15px;
-  padding-left: 15px;
-  border-radius: 10px;
-  background-color: #e4e4e4;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.3s, cursor 0.3s;
+  cursor: pointer;
 }
 
-.answers:hover {
-  color: rgb(29, 87, 63);
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  /* padding: 10px; */
+.card-answer:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.buttonAnswer {
-  height: 40px;
-  width: 120px;
-  margin-right: 20px;
-  color: #f5f5f5;
-  font-size: 20px;
-  font-weight: 700;
-  border-radius: 7px;
-  background-color: rgb(29, 87, 63);
+.card-answer:hover button {
+  visibility: visible;
+}
+
+.card-answer-text {
+  flex-grow: 1;
+}
+
+.card-answer-button {
+  visibility: hidden;
+  background-color: #f8f8f8;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card-result {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px 10px;
+}
+
+.corect {
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+}
+
+.false {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
 }

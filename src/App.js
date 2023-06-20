@@ -5,11 +5,22 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar">
-        <h2>Home</h2>
-        <h2>Log-in</h2>
-        <h2>Sign-up</h2>
+        <div className="navbar-logo">Logo</div>
+        <div className="navbar-menu">
+          <a href="#" className="navbar-menu-item">
+            Name
+          </a>
+          <a href="#" className="navbar-menu-item">
+            About
+          </a>
+          <a href="#" className="navbar-menu-item">
+            Log-In
+          </a>
+          <a href="#" className="navbar-menu-item">
+            Sign-Up
+          </a>
+        </div>
       </nav>
-      <h1>Denumirea</h1>
       <Question></Question>
     </div>
   );
